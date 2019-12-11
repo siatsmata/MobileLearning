@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:windowSoftInputMode="adjustResize"
+    android:background="@color/colorPrimary"
+    tools:context=".ManageDosen2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txt_idclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txt_nameclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="12pt"
+            />
+        <TextView
+            android:id="@+id/txt_pertemuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="10pt"
+            />
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_create_task"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Create Task"
+            android:onClick="createtask2"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_foto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="createtask"
+                android:src="@drawable/gallery"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+
+            <ImageView
+                android:id="@+id/btn_video"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="uploadvideotask"
+                android:src="@drawable/video"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_docx"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="uploaddocxtask"
+                android:src="@drawable/docx"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/btn_pdf"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:onClick="pdftask"
+                android:src="@drawable/pdf"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="Check Task"
+                android:onClick="checktask"
+                android:background="@drawable/btn_background"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="Monitoring"
+                android:onClick="monitor"
+                android:background="@color/dark_blue"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

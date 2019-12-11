@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pickFile"
+        android:icon="@drawable/ic_folder_48dp"
+        android:title="@string/pick_file"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/upload"
+        android:icon="@android:drawable/ic_menu_upload_you_tube"
+        android:title="@string/pick_file"
+        app:showAsAction="always" />
+</menu>

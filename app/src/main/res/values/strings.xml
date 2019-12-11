@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Mobile Learning</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_caption">Dont have an account? Register</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="nama">Nama</string>
+    <string name="nim">NIM</string>
+    <string name="logout">Logout</string>
+    <string name="greeting">Hi, %s :)</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="search1">Search</string>
+    <string name="type_name">Search Code Class</string>
+    <string name="msg_loading">Loading...</string>
+    <string name="pick_file">Pick file</string>
+    <string-array name="list_pertemuan">
+        <item>Pertemuan 1</item>
+        <item>Pertemuan 2</item>
+        <item>Pertemuan 3</item>
+        <item>Pertemuan 4</item>
+        <item>Pertemuan 5</item>
+        <item>Pertemuan 6</item>
+        <item>Pertemuan 7</item>
+        <item>Pertemuan 8</item>
+        <item>Pertemuan 9</item>
+        <item>Pertemuan 10</item>
+        <item>Pertemuan 11</item>
+        <item>Pertemuan 12</item>
+        <item>Pertemuan 13</item>
+        <item>Pertemuan 14</item>
+    </string-array>
+</resources>

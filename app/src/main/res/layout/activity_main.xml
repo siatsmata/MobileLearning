@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:textColor="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ml1" />
+
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="username"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"/>
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#448AFF" />
+
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="NAMA"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginTop="25dp"
+        >
+
+        <Button
+            android:id="@+id/btn_addclass"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"
+            android:text="CREATE CLASS"
+            android:textStyle="bold"
+            android:onClick="createclass"/>
+
+        <Button
+            android:id="@+id/btn_manage"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/colorButton"
+            android:textColor="@color/white"
+            android:text="MANAGE CLASS"
+            android:textStyle="bold"
+            android:onClick="manageclass"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/btn_joinclass"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@color/colorButton"
+            android:textColor="@color/white"
+            android:text="JOIN CLASS"
+            android:textStyle="bold"
+            android:onClick="joinclass"/>
+
+        <Button
+            android:id="@+id/btn_listclass"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"
+            android:text="LIST CLASS"
+            android:textStyle="bold"
+            android:onClick="listclass"/>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorLogout"
+            android:textColor="@color/white"
+            android:text="Logout"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

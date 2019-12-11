@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    tools:context=".DisplayTaskActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_nameclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="12pt"
+                />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+                <TextView
+                    android:id="@+id/txt_username_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                   android:gravity="center"
+                    android:textStyle="bold"
+                    />
+
+            <TextView
+                android:id="@+id/txt_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                    android:id="@+id/txt_idclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:visibility="invisible"
+                    />
+
+
+
+
+
+
+        <!--<ImageView
+            android:layout_width="800px"
+            android:layout_height="800px"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            />-->
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="176dp"
+            android:layout_marginTop="25dp"
+            >
+
+            <Button
+                android:id="@+id/btn_openpdf"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="Open Document"
+                android:onClick="openpdf"
+                android:background="@color/colorButton"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_openvid"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Open Video"
+                    android:onClick="openvideo"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginTop="25dp"
+        >
+            <Button
+                android:id="@+id/btn_openphoto"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="Open Photo"
+                android:onClick="openphoto"
+                android:background="@color/colorButton"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_openvideo"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Open Video"
+            android:onClick="openvideosolo"
+            android:background="@color/colorButton"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp"
+        android:layout_marginTop="25dp">
+                <Button
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="Open Task"
+                    android:onClick="senttask"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/white"
+                    android:drawableRight="@drawable/ic_image_box"/>
+
+                <Button
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Open PDF Task"
+                    android:onClick="openpdftask"
+                    android:background="@color/colorButton"
+                    android:textColor="@color/white"
+                    android:drawableRight="@drawable/ic_pdf_box"
+                    />
+
+    </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewTask"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/txt_nametask"
+                    android:hint="Enter a Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"/>
+
+                <Button
+                    android:id="@+id/btn_task_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Upload Task"
+                    android:onClick="uploadtask"
+                    android:background="@drawable/btn_background"
+                    android:textColor="@color/colorPrimary"/>
+
+                <Button
+                    android:id="@+id/btn_task_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Upload Task Pdf"
+                    android:onClick="uploadtaskpdf"
+                    android:background="@drawable/btn_background"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+</ScrollView>

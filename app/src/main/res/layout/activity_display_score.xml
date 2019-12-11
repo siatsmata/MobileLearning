@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    tools:context=".DisplayScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:textColor="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"
+            />
+
+
+        <ImageView
+            android:layout_width="800px"
+            android:layout_height="800px"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btn_openpdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Open PDF"
+            android:onClick="openpdf"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/txt_score"
+            android:hint="Enter Score Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:inputType="number"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter Score"
+            android:onClick="entertask"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+</ScrollView>
