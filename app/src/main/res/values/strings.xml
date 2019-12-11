@@ -24,6 +24,7 @@
     <string name="type_name">Search Code Class</string>
     <string name="msg_loading">Loading...</string>
     <string name="pick_file">Pick file</string>
+    <string name="Username">username</string>
     <string-array name="list_pertemuan">
         <item>Pertemuan 1</item>
         <item>Pertemuan 2</item>

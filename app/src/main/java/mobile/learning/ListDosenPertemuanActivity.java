@@ -14,11 +14,13 @@ import android.widget.Toast;
 public class ListDosenPertemuanActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     ListView listView;
-    TextView txt_username,txt_nama;
+    TextView txt_username,txt_nama, heading;
     public static String idclass,username,nameclass,code,pertemuan;
     ArrayAdapter<String> adapter;
     String e[] = {"Pertemuan 1","Pertemuan 2","Pertemuan 3","Pertemuan 4","Pertemuan 5","Pertemuan 6","Pertemuan 7","Pertemuan 8"
             ,"Pertemuan 9","Pertemuan 10","Pertemuan 11","Pertemuan 12","Pertemuan 13","Pertemuan 14"};
+
+
 
 
 
@@ -28,6 +30,9 @@ public class ListDosenPertemuanActivity extends AppCompatActivity implements Ada
         setContentView(R.layout.activity_list_dosen_pertemuan);
 
         listView = (ListView) findViewById(R.id.list_view);
+
+        heading = findViewById(R.id.heading);
+
 
         adapter  = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, e);
 
@@ -42,6 +47,7 @@ public class ListDosenPertemuanActivity extends AppCompatActivity implements Ada
         //startActivity(intent);
         //txt_username.setText(getIntent().getStringExtra("username_client"));
         //txt_nama.setText(getIntent().getStringExtra("nama"));
+        heading.setText(nameclass);
     }
 
 
@@ -53,6 +59,7 @@ public class ListDosenPertemuanActivity extends AppCompatActivity implements Ada
         pertemuan = e[position];
         Intent intent = new Intent(this, ManageDosen2Activity.class);
 
+        String nameclass = ((TextView)view.findViewById(R.id.heading)).getText().toString();
 
         intent.putExtra(Server.TAG_IDCLASS,idclass);
         intent.putExtra(Server.TAG_USERNAME,username);
